@@ -10,7 +10,7 @@ const Header = () => {
                 <Container>
                 <Navbar.Brand href="#home" className='header'>
                   <Image className="d-none d-sm-inline-block mr-3"  src={LogoBol} rounded fluid width='80px' />
-                   ЈЗУ ОПШТА БОЛНИЦА - ПРИЛЕП </Navbar.Brand>
+                   ЈЗУ ОПШТА БОЛНИЦА - ПРИЛЕП</Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                         <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ml-auto">

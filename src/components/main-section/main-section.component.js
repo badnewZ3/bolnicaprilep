@@ -9,10 +9,12 @@ const MainSection = () => {
         <div className='main-section'> 
         <Container className='mt-3 border p-3'>
             <Row>
-                <Col md><MainSlider/></Col>
-                <Col md><MianInfo/></Col>
-            </Row>
+                <Col lg={12}  className='mb-2' ><MainSlider/></Col>
+                <Col lg={12} ><MianInfo/></Col>
+                </Row>
         </Container>
+                
+            
         </div>
      );
 }

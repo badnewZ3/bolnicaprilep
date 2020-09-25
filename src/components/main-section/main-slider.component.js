@@ -1,19 +1,20 @@
 import React from 'react';
 import { Carousel } from 'react-bootstrap';
 import Img1 from '../../assets/img/vlez1.jpg';
+import './main-slider.styles.css';
 
 const MainSlider = () => {
     return ( 
         <Carousel>
-  <Carousel.Item>
+  <Carousel.Item >
     <img
       className="d-block w-100"
       src={Img1}
       alt="First slide"
+      height='400px'
     />
-    <Carousel.Caption>
-      <h3>First slide label</h3>
-      <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+    <Carousel.Caption className='text-bg'>
+      <h3>24/7 Се грижиме за вашето здравје</h3>
     </Carousel.Caption>
   </Carousel.Item>
   <Carousel.Item>
@@ -21,11 +22,11 @@ const MainSlider = () => {
       className="d-block w-100"
       src={Img1}
       alt="Third slide"
+      height='400px'
     />
 
-    <Carousel.Caption>
-      <h3>Second slide label</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    <Carousel.Caption className='text-bg'>
+      <h3>Современа Апаратура</h3>
     </Carousel.Caption>
   </Carousel.Item>
   <Carousel.Item>
@@ -33,11 +34,11 @@ const MainSlider = () => {
       className="d-block w-100"
       src={Img1}
       alt="Third slide"
+      height='400px'
     />
 
-    <Carousel.Caption>
-      <h3>Third slide label</h3>
-      <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+    <Carousel.Caption className='text-bg'>
+      <h3>Стручност и одговорност</h3>
     </Carousel.Caption>
   </Carousel.Item>
 </Carousel>
