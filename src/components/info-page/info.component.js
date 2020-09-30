@@ -4,7 +4,7 @@ import './info.styles.css';
 
 const InfoHeader = () => {
     return ( 
-        <div className='info'>
+        <div className='info bg-dark'>
             <Container className='info-header'>
                 <div>
                     <p className='info-text-1'>TEL: 075 - 900 - 500</p>

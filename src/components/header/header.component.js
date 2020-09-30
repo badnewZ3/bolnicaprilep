@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Navbar, Nav, NavDropdown, Container,Image} from 'react-bootstrap';
 import './header.styles.css';
 import LogoBol from '../../assets/img/logo11.png';
@@ -8,9 +9,11 @@ const Header = () => {
         <div>
             <Navbar bg="light" expand="lg" className='shadow-sm bg-white rounded p-0'>
                 <Container>
+                  <Link to='/'>
                 <Navbar.Brand href="#home" className='header'>
                   <Image className="d-none d-sm-inline-block mr-3"  src={LogoBol} rounded fluid width='80px' />
                    ЈЗУ ОПШТА БОЛНИЦА - ПРИЛЕП</Navbar.Brand>
+                   </Link>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                         <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ml-auto">
