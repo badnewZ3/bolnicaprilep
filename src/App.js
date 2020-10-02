@@ -7,6 +7,7 @@ import InfoHeader from './components/info-page/info.component';
 import Header from './components/header/header.component';
 import MainPage from './components/main-page/main-page.component';
 import SiteOddeli from './components/oddeli/oddeli-site.component';
+import MainFooter from './components/footer/footer-section.component';
 
 
 
@@ -19,6 +20,7 @@ function App() {
       <Route exact path='/' component={MainPage}/>
       <Route path='/oddeli' component={SiteOddeli} />
       </Switch>
+      <MainFooter/>
     </div>
   );
 }

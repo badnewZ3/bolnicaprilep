@@ -4,63 +4,63 @@ const oddeli = [
         name:'Гинекологија и Акушерство',
     },
     {
-        img:'ginekologija',
+        img:'neonatologija',
         name:'неонатологија',
     },
     {
-        img:'ginekologija',
+        img:'anestezija',
         name:'анестезија и реаниматологија',
     },
     {
-        img:'ginekologija',
+        img:'ortopedija',
         name:'ортопедија и трауматологија',
     },
     {
-        img:'ginekologija',
-        name:'Гинекологија и Акушерство',
+        img:'hirurgija',
+        name:'Хируршки Болести',
     },
     {
-        img:'ginekologija',
+        img:'ocno',
         name:'очни болести',
     },
     {
-        img:'ginekologija',
+        img:'interno',
         name:'интерни болести',
     },
     {
-        img:'ginekologija',
+        img:'detsko',
         name:'детски болести',
     },
     {
-        img:'ginekologija',
+        img:'nevrologija',
         name:'невролошки и психијатриски болести',
     },
     {
-        img:'ginekologija',
+        img:'infektivno',
         name:'инфективни болести',
     },
     {
-        img:'ginekologija',
+        img:'fizikalna',
         name:'физикална медицина и рехабилитација',
     },
     {
-        img:'ginekologija',
+        img:'radiologija',
         name:'радиологија и ултра звук',
     },
     {
-        img:'ginekologija',
+        img:'laboratorija',
         name:'клиничко-биохемиска лабараторија',
     },
     {
-        img:'ginekologija',
+        img:'patologija',
         name:'патологија и цитологија',
     },
     {
-        img:'ginekologija',
+        img:'kozno',
         name:'дерматовенерологија',
     },
     {
-        img:'ginekologija',
+        img:'максило',
         name:'максилофацијална и стомато хирургија',
     },
 ];
