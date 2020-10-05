@@ -20,9 +20,11 @@ class ListaOddeli extends React.Component {
             return <Col className='mb-3'><OddeliItem img={oddeli.img} name={oddeli.name.toLocaleUpperCase()} /></Col>
         })
         return (
-            <div className='bg-light'> 
-                <h1 className='mb-3' >ОДДЕЛИ</h1>
+            <div className='bg-light oddeli-pozadina' >
+                <div className='d-flex flex-column align-items-center'>
+                <h1 className='mb-3'>ОДДЕЛИ</h1>
                 <FontAwesomeIcon icon={faHandHoldingMedical} size='4x' className='mb-3'/>
+                </div>
             <Container >
                 <Row className='mb-3'>
                     {oddeliList}  

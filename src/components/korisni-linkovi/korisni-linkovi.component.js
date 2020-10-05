@@ -6,7 +6,7 @@ const KorisniLinkovi = () => {
         <div className='bg-dark'>
         <Container>
             <Row>
-                <Col lg={12}>
+                <Col lg={12} className='my-4'>
         
             <h1 className='text-light mb-3'>Корисни Линкови</h1>
             <a href='http://mojtermin.mk/patients' ><img src={require('../../assets/img/linkovi/mojtermin.png')} style={{width:'120px', marginRight:'3rem'}} alt='Mojtermin' /></a>

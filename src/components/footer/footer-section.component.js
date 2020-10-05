@@ -1,20 +1,21 @@
 import React from 'react';
 import { Container, Row , Col } from 'react-bootstrap';
-import './footer-section.styles.css'
+import './footer-section.styles.css';
+import Kontakt from './kontakt.component';
+import MapContainer from './google-map.component';
 
 const MainFooter = () => {
     return ( 
         <div className='bg-light footer'>
             <Container>
                 <Row>
-                    <Col>
-                    <h4>Контакт</h4>
+                    <Col  lg={6} md={12}>
+                    <h3 className='contact-title d-inline-block'>Контакт</h3>
+                    <Kontakt/>
                     </Col>
-                    <Col>
-                    <h4>Контакт</h4>
-                    </Col>
-                    <Col>
-                    <h4>Контакт</h4>
+                    <Col lg={6} md={12}> 
+                    <h3 className='contact-title d-inline-block'>Локација</h3>
+                    <MapContainer/>
                     </Col>
                 </Row>
             </Container>

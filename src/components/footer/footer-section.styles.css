@@ -1,3 +1,8 @@
 .footer {
-    height: 300px;
+    height: 400px;
+}
+
+.contact-title {
+    border-bottom: 5px solid #2dc2ac;
+    margin: 2rem 0  2rem 0;
 }
