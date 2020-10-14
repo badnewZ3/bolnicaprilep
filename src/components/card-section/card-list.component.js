@@ -3,28 +3,28 @@
       id: 1,
       icon:'phone-square',
       name: 'Локали за Контакт',
-      username: 'Bret',
+      link: '/lokali',
       color: '#343a40'
     },
     {
       id: 2,
       icon:'hospital-user',
       name: 'Информации за пациенти',
-      username: 'Antonette',
+      link: '/info',
       color: '#3f474e'
     },
     {
       id: 3,
       icon:'folder-open',
       name: 'Годишни Извештаи',
-      username: 'Samantha',
+      link: '/izvestai',
       color: '#4b545c'
     },
     {
       id: 4,
       icon:'virus',
       name: 'Covid-19 Инфорамции',
-      username: 'Samantha',
+      link: '/covidinfo',
       color: '#56606a'
     }
 ];

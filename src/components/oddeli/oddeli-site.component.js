@@ -19,14 +19,16 @@ class SiteOddeli extends React.Component {
             return <Col className='mb-3'><OddeliItem img={oddeli.img} name={oddeli.name.toLocaleUpperCase()} /></Col>
         } )
         return (
-            <div className='bg-light'>
+            <div >
                 <h1>ОДДЕЛИ</h1>
                 <FontAwesomeIcon icon={faHandHoldingMedical} size='4x' className='mb-3'/>
+            <div className='bg-light pt-3'>
             <Container >
                 <Row className='mb-3'>
                     {siteOddeli}  
                 </Row>
             </Container>
+            </div>
             </div>
          );
     }

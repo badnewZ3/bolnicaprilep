@@ -1,0 +1,19 @@
+.lokali {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+table, th, td {
+    border: 1px solid black;
+    text-align: left;
+    padding-left: 10px;
+    margin-bottom: 20px;
+  }
+
+  .title {
+      border-bottom:  3px solid #2dc2ac;
+      font-size: 1.5em;
+      
+  }

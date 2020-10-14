@@ -6,7 +6,7 @@ import MapContainer from './google-map.component';
 
 const MainFooter = () => {
     return ( 
-        <div className='bg-light footer'>
+        <div className='bg-dark text-light footer'>
             <Container>
                 <Row>
                     <Col  lg={6} md={12}>
