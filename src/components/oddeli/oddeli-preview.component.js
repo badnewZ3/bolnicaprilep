@@ -17,7 +17,7 @@ class ListaOddeli extends React.Component {
     render() { 
         const oddeli = this.state.oddeli;
         const oddeliList = oddeli.filter((item, index) => index < 6).map( oddeli => {
-            return <Col className='mb-3'><OddeliItem img={oddeli.img} name={oddeli.name.toLocaleUpperCase()} /></Col>
+            return <Col className='mb-3'><OddeliItem key={oddeli.id} img={oddeli.img} name={oddeli.name.toLocaleUpperCase()} /></Col>
         })
         return (
             <div className='bg-light oddeli-pozadina' >

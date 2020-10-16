@@ -10,14 +10,41 @@ class SiteOddeli extends React.Component {
     constructor(props) {
         super(props);
         this.state = { 
-            oddeli:oddeli
+            oddeli:oddeli,
+            oddeliInfo:'',
          }
+         
+         
     }
+         onButtonChange = (event) => {
+        this.setState({
+            oddeliInfo:event.target.id
+        });
+        console.log(this.state.oddeliInfo);
+      
+      };
+      onButtonReturn = () => {
+          this.setState({
+              oddeliInfo:''
+          })
+      }
+
+    
     render() { 
         const oddeli = this.state.oddeli;
+        const oddeliInfo = this.state.oddeliInfo;
         const siteOddeli = oddeli.map( oddeli => {
-            return <Col className='mb-3'><OddeliItem img={oddeli.img} name={oddeli.name.toLocaleUpperCase()} /></Col>
+            return <Col key={oddeli.id} className='mb-3'><OddeliItem key={oddeli.id} img={oddeli.img} name={oddeli.name.toLocaleUpperCase()} id={oddeli.id} onButton={this.onButtonChange} /></Col>
         } )
+        let oddeliPosebno;
+         if (!this.state.oddeliInfo) {
+            oddeliPosebno = siteOddeli;
+            
+        } else {
+        oddeliPosebno = <div><div>{oddeli[oddeliInfo - 1].name}</div>
+                <button onClick={this.onButtonReturn}>Назад</button></div>
+        }
+        console.log(oddeliInfo);
         return (
             <div >
                 <h1>ОДДЕЛИ</h1>
@@ -25,7 +52,8 @@ class SiteOddeli extends React.Component {
             <div className='bg-light pt-3'>
             <Container >
                 <Row className='mb-3'>
-                    {siteOddeli}  
+                    {oddeliPosebno}
+                    
                 </Row>
             </Container>
             </div>
