@@ -6,7 +6,8 @@ import MapContainer from './google-map.component';
 
 const MainFooter = () => {
     return ( 
-        <div className='bg-dark text-light footer'>
+        <div className='bg-dark text-light '>
+        <div className='footer'>
             <Container>
                 <Row>
                     <Col  lg={6} md={12}>
@@ -20,6 +21,8 @@ const MainFooter = () => {
                 </Row>
             </Container>
         </div>
+        <p>&copy; 2020 Општа Болница - Прилеп</p>
+    </div>
      );
 }
  

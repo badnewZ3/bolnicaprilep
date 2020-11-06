@@ -33,11 +33,11 @@ class KontaktLokali extends React.Component {
 
         return ( 
         <div>
-            <h1 className='my-4'>Локали за Контакт</h1> 
+            <h1 className='my-4'>ЛОКАЛИ ЗА КОНТАКТ</h1> 
             <div className='bg-light'>
             <Container className='lokali pt-4'>
                 <h5>Централа: +389 48 422 430</h5>
-                <h5 className='title'>Оддели</h5>
+                <h3 className='title'>ОДДЕЛИ</h3>
                 {oddeliKontakt}
                 </Container>
             </div>

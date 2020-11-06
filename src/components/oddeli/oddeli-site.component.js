@@ -4,6 +4,7 @@ import oddeli from './oddeli-content.component';
 import OddeliItem from './oddeli-item.component';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHandHoldingMedical} from '@fortawesome/free-solid-svg-icons';
+import OddeliInfo from './oddeliInfo.component';
 
 
 class SiteOddeli extends React.Component {
@@ -20,7 +21,7 @@ class SiteOddeli extends React.Component {
         this.setState({
             oddeliInfo:event.target.id
         });
-        console.log(this.state.oddeliInfo);
+
       
       };
       onButtonReturn = () => {
@@ -34,15 +35,15 @@ class SiteOddeli extends React.Component {
         const oddeli = this.state.oddeli;
         const oddeliInfo = this.state.oddeliInfo;
         const siteOddeli = oddeli.map( oddeli => {
-            return <Col key={oddeli.id} className='mb-3'><OddeliItem key={oddeli.id} img={oddeli.img} name={oddeli.name.toLocaleUpperCase()} id={oddeli.id} onButton={this.onButtonChange} /></Col>
+            return <Col key={oddeli.id} className='mb-3'><OddeliItem key={oddeli.id} img={oddeli.img} name={oddeli.name.toLocaleUpperCase()} id={oddeli.id} onButton={this.onButtonChange}/></Col>
         } )
         let oddeliPosebno;
          if (!this.state.oddeliInfo) {
             oddeliPosebno = siteOddeli;
             
         } else {
-        oddeliPosebno = <div><div>{oddeli[oddeliInfo - 1].name}</div>
-                <button onClick={this.onButtonReturn}>Назад</button></div>
+        oddeliPosebno = <OddeliInfo name={oddeli[oddeliInfo -1].name.toLocaleUpperCase()} text={oddeli[oddeliInfo -1].text} onButton={this.onButtonChange} />
+                
         }
         console.log(oddeliInfo);
         return (

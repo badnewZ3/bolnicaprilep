@@ -9,6 +9,7 @@ import MainPage from './components/main-page/main-page.component';
 import SiteOddeli from './components/oddeli/oddeli-site.component';
 import MainFooter from './components/footer/footer-section.component';
 import KontaktLokali from './components/lokali-za-kontakt/lokali-za-kontakt.component';
+import InfoZaPacienti from './components/info-za-pacienti/InfoZaPacienti.component';
 
 
 
@@ -21,6 +22,7 @@ function App() {
       <Route exact path='/' component={MainPage}/>
       <Route path='/oddeli' component={SiteOddeli} />
       <Route path='/lokali' component={KontaktLokali} />
+      <Route path='/infopacienti' component={InfoZaPacienti}/>
       </Switch>
       <MainFooter/>
     </div>

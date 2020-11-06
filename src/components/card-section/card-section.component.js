@@ -15,7 +15,7 @@ class CardSection extends React.Component {
     render() { 
         const card = this.state.cards;
         const cardList = card.map((card ) => {
-            return <Col md className='px-0'><Link to={card.link}><CardItem icon={card.icon} key={card.id} name={card.name} username={card.username} color={card.color}/></Link> </Col>
+            return <Col md className='px-0' key={card.id}><Link to={card.link}><CardItem icon={card.icon} key={card.id} name={card.name} username={card.username} color={card.color}/></Link> </Col>
          });
            
         return (

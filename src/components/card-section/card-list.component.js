@@ -10,14 +10,14 @@
       id: 2,
       icon:'hospital-user',
       name: 'Информации за пациенти',
-      link: '/info',
+      link: '/infopacienti',
       color: '#3f474e'
     },
     {
       id: 3,
       icon:'folder-open',
       name: 'Годишни Извештаи',
-      link: '/izvestai',
+      link: '/izvestaii',
       color: '#4b545c'
     },
     {

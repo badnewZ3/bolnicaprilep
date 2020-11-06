@@ -12,11 +12,11 @@ const Kontakt = () => {
             <p className='mb-0 ml-2'>Трајко Тарцан бб. ПРИЛЕП</p>
             </div>
             <div className='contact'>
-        <FontAwesomeIcon icon={faPhoneSquareAlt}/>
-            <p className='mb-0 ml-2'>075-900-500</p>
+        <FontAwesomeIcon icon={faPhoneSquareAlt} />
+            <p className='mb-0 ml-2'>+389 48 422 430</p>
             </div>
             <div className='contact'>
-        <FontAwesomeIcon icon={faEnvelopeSquare}/>
+        <FontAwesomeIcon icon={faEnvelopeSquare} />
             <a href="mailto:bolnicapp@yahoo.com">bolnicapp@yahoo.com</a>
             </div>
             </div>

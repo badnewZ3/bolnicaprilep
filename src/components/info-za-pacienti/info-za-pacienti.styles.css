@@ -1,0 +1,19 @@
+.infoPacienti {
+    
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 3rem;
+    text-align: left;
+
+}
+
+.infoPacienti div {
+    margin-bottom: 3rem;
+}
+
+.infoPacienti h3 {
+    border-bottom: 5px solid #2dc2ac;
+    display: inline-block;
+}

@@ -1,16 +1,19 @@
 import React from 'react';
 import { Container }from 'react-bootstrap';
 import './info.styles.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {faPhoneSquareAlt, faEnvelopeSquare} from '@fortawesome/free-solid-svg-icons';
 
 const InfoHeader = () => {
     return ( 
         <div className='info bg-dark'>
             <Container className='info-header'>
                 <div>
-                    <p className='info-text-1'>TEL: 075 - 900 - 500</p>
+                <p className='info-text-1'> <FontAwesomeIcon icon={faPhoneSquareAlt}/> +389 48 422 430</p>
                 </div>
                 <div>
-                    <p className='info-text-2'>Email: bolnicapp@yahoo.com</p>
+                <FontAwesomeIcon icon={faEnvelopeSquare}/>
+            <a href="mailto:bolnicapp@yahoo.com">bolnicapp@yahoo.com</a>
                 </div>
             </Container>
         </div>

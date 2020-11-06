@@ -1,6 +1,12 @@
 .button {
     border: none;
-    border-radius: 15px;
     padding: 10px;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
 
 }
+
+.button:hover {
+    border-bottom: 5px solid #2dc2ac;
+}
+
